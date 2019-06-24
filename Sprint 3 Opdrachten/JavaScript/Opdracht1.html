@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Opdracht1css.css">
+    <meta charset="UTF-8">
+    <title>Opracht 1</title>
+</head>
+<body>
+<script type="text/javascript">
+    document.write("<h1>DRANKAUTOMAAT</h1>");
+    document.write("<br><h2>1. Coca-Cola = *€1,00" + "<br>2. Fanta = *€1,00" +
+        "<br>3. Spa Blauw = *€0,75" + "<br>4. Red Bull = *€1,50</h2>");
+    if (document.getElementById(ok).clicked == true){
+        if (id.keuze = 1){
+            var bedrag = 1;
+            var bestelling = Cola;
+            var wisselgeld = bestelling - bedrag;
+            if (id.bedrag < id.geld){
+                alert("<h3>Het bestelde product, "+bestelling+"wordt uitgeleverd en er wordt "+wisselgeld+" euro wisselgeld geretourneerd.</h3>");
+            }
+        }
+    }
+</script>
+<form name="keuze">
+<input required type="text" id="keuze"
+       name="keuze" placeholder="Uw keuze"><br>
+    <input required type="text" id="geld"
+           name="geld" placeholder="Uw geld"><br>
+    <input type="submit" id="ok"
+           name="ok" value="Ok?">
+</form>
+</body>
+</html>

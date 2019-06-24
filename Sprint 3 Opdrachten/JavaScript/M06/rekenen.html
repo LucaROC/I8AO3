@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekenen</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var getal1 = prompt('Vul getal 1 in','');
+        var getal2 = prompt('Vul getal 2 in','');
+        var keuze = prompt('Kies nu uit : plus, min, maal of delen','');
+
+        if (keuze == "plus")
+        {
+            var antwoord = +getal1 + +getal2;
+            document.write(antwoord);
+
+        }
+        else if (keuze == "min")
+        {
+            var antwoord = -getal1 - -getal2;
+            document.write(antwoord);
+
+        }
+        else if (keuze == "maal")
+        {
+            var antwoord = getal1 * getal2;
+            document.write(antwoord);
+
+        }
+        else if (keuze == "delen")
+        {
+            var antwoord = getal1 / getal2;
+            document.write(antwoord);
+
+        }
+        else
+        {
+            document.write('Incorrecte invoer');
+        }
+    </script>
+</body>
+</html>

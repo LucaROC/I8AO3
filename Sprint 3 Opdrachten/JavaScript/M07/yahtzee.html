@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobbelen</title>
+</head>
+<body>
+<p>Dobbel 1: <span id="dobbel1"></span></p>
+<p>Dobbel 2: <span id="dobbel2"></span></p>
+<p>Dobbel 3: <span id="dobbel3"></span></p>
+<p>Dobbel 4: <span id="dobbel4"></span></p>
+<p>Dobbel 5: <span id="dobbel5"></span></p>
+<p>Alle dobbels samen: <span id="uitkomst"></span></p>
+<button id="yahtzee" onclick="dobbelsGenereren()">Dobbelen</button>
+    <script>
+
+        function dobbelsGenereren(num) {
+            var dobbels = [];
+            for (var i=0, t=5; i<t; i++) {
+                dobbels.push(Math.floor(Math.random() * 6) +1)
+            }
+            document.getElementById("dobbel1").innerHTML = dobbels[0];
+            document.getElementById("dobbel2").innerHTML = dobbels[1];
+            document.getElementById("dobbel3").innerHTML = dobbels[2];
+            document.getElementById("dobbel4").innerHTML = dobbels[3];
+            document.getElementById("dobbel5").innerHTML = dobbels[4];
+            document.getElementById("uitkomst").innerHTML = dobbels.reduce(berekenSom);
+        }
+        function berekenSom(total, num) {
+            return total + Math.round(num);
+        }
+    </script>
+</body>
+</html>

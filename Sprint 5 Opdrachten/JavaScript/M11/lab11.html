@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 11</title>
+</head>
+<body>
+    <script>
+        // De Array aanmaken om de nummers voluit te schrijven
+        var getal = new Array();
+        getal[0] = 'nul ';
+        getal[1] = 'een ';
+        getal[2] = 'twee ';
+        getal[3] = 'drie ';
+        getal[4] = 'vier ';
+        getal[5] = 'vijf ';
+        getal[6] = 'zes ';
+        getal[7] = 'zeven ';
+        getal[8] = 'acht ';
+        getal[9] = 'negen ';
+
+        // De gebruiker vragen om input en vervolgens de input laten zien
+        var telefoonnummer = prompt('Voer uw telefoonnummer in.');
+        document.write('<br>'+ telefoonnummer + '<br>');
+
+        // De for-loop om het nummer te doorlopen
+        for(y=0; y<telefoonnummer.length; y++) {
+            nummer = telefoonnummer.charAt(y);
+            // Elk nummer voluit spellen met behulp van Switch
+            switch (nummer) {
+                case '0':
+                    document.write(getal[0]);
+                    break;
+                case '1':
+                    document.write(getal[1]);
+                    break;
+                case '2':
+                    document.write(getal[2]);
+                    break;
+                case '3':
+                    document.write(getal[3]);
+                    break;
+                case '4':
+                    document.write(getal[4]);
+                    break;
+                case '5':
+                    document.write(getal[5]);
+                    break;
+                case '6':
+                    document.write(getal[6]);
+                    break;
+                case '7':
+                    document.write(getal[7]);
+                    break;
+                case '8':
+                    document.write(getal[8]);
+                    break;
+                case '9':
+                    document.write(getal[9]);
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

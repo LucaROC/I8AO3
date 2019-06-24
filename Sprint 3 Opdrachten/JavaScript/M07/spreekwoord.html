@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spreekwoord</title>
+</head>
+<body>
+<script>
+    //Date Array en Date Variabelen bepalen
+    var d = new Date();
+    var dag = new Array(7);
+    dag[0] =  "zondag";
+    dag[1] = "maandag";
+    dag[2] = "dinsdag";
+    dag[3] = "woensdag";
+    dag[4] = "donderdag";
+    dag[5] = "vrijdag";
+    dag[6] = "zaterdag";
+
+    var spr = new Array(7);
+    spr[0] = "Oost west, thuis best";
+    spr[1] = "Eigen haard is goud waard";
+    spr[2] = "Haastige spoed is zelden goed";
+    spr[3] = "Beter laat dan nooit";
+    spr[4] = "Wie het laatst lacht, lacht het best";
+    spr[5] = "De morgenstond heeft goud in de mond";
+    spr[6] = "Zoals het klokje thuis tikt, tikt het nergens";
+
+    //Dag van vandaag oproepen
+    var vandaag = dag[d.getDay()];
+    var spreekwoord = spr[d.getDay()];
+
+    //De dag tonen
+    document.write("Het is vandaag "+vandaag);
+    document.write("<br>De tip van de dag is: "+spreekwoord+"!");
+</script>
+</body>
+</html>

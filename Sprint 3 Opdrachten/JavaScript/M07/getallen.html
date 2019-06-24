@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getallen</title>
+</head>
+<body>
+<button onclick="getallenFunction()">Getallen opgeven</button>
+
+<p>Jouw array is: <span id="arrayDisplay"></span></p>
+<p>De som van jouw array is: <span id="som"></span></p>
+
+<script>
+    var getallen = new Array();
+
+    function berekenSom(total, num) {
+        return total + Math.round(num);
+    }
+
+    function getallenFunction(item) {
+        getallen[0] = prompt("Voer het eerste getal in");
+        getallen[1] = prompt("Voer het tweede getal in");
+        getallen[2] = prompt("Voer het derde getal in");
+        document.getElementById("arrayDisplay").innerHTML = getallen;
+        document.getElementById("som").innerHTML = getallen.reduce(berekenSom, 0);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 04</title>
+</head>
+<h3>Lab 04</h3>
+<body>
+    <script>
+        var palet = [];
+        palet.push('blauw','rood','groen','geel','oranje');
+        document.write("3 || Palet is nu: "+ palet);
+
+        var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+        palet.push(nieuwekleur);
+        document.write("<br>6 || Palet is nu: "+ palet);
+
+        var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+        palet.unshift(nieuwekleur);
+        document.write("<br>9 || Palet is nu: "+ palet);
+
+        palet.sort();
+        document.write("<br>11 || Palet is nu: "+ palet);
+
+        var palet2 = palet.splice(0,3);
+        document.write("<br>13 || Palet is nu: "+ palet);
+        document.write("<br>14 || Palet is nu: "+ palet2);
+
+        var palet3 = palet.splice();
+        document.write("<br>16 || Palet is nu: "+ palet);
+    </script>
+</body>
+</html>

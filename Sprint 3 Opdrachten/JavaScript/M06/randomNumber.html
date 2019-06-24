@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>randomNumber</title>
+</head>
+<script type="text/javascript">
+    function randomizerFunction() {
+        var vraag = prompt('Kies een nummer onder de 10', '');
+        var random = Math.floor((Math.random() * 10) + 1);
+        document.getElementById("ownAnswer").innerHTML = 'Jouw antwoord is '+vraag;
+        document.getElementById("guessAnswer").innerHTML = 'Het te raden antwoord was '+random;
+        if (vraag == random) {
+            document.getElementById("answerDisplay").innerHTML = 'Jouw antwoord is dus goed';
+        }
+        else if (vraag !== random) {
+            document.getElementById("answerDisplay").innerHTML = 'Jouw antwoord is dus fout';
+        }
+    }
+</script>
+<body>
+<h1>Raad het getal</h1>
+<button id="btnSom" onclick="randomizerFunction()">Raad het getal</button>
+<h2 id="ownAnswer"></h2>
+<h2 id="guessAnswer"></h2>
+<h2 id="answerDisplay"></h2>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1{
+    margin-left: 33%;
+    color: red;
+    font-size: 3.2rem;
+}
+h2{
+    color: red;
+    margin-left: 33%;
+    margin-top: 5px;
+}
+h3{
+    margin-left: 60%;
+    margin-bottom: 20%;
+}
+form{
+    text-align: center;
+}
